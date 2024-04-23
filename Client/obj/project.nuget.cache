@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xsCciZ2wZBrMRy6ltzg5lx34r3ozESWd/1f/Yox+qpby/NcwlsdGIb5f8eNh3mhgKFMDthPXwveuuHxdbUQfqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aulin\\OneDrive\\Рабочий стол\\DockerPrikol\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aulin\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\aulin\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
