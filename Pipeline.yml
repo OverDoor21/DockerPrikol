@@ -1,0 +1,6 @@
+language: csharp
+solution: DockerPrikol.sln
+dotnet: 8.0.10
+script: 
+    -docker build -t server-dotnet Server/Docker/Ubuntu
+    -docker run -p 8080:80 server-dotnet

@@ -1,0 +1,7 @@
+FROM debian:latest
+
+ENV NGINX_VERSION 1.13.6-1~jessie
+
+EXPOSE 80 443
+
+CMD [ "nginx",'-g', 'daemon off;' ]

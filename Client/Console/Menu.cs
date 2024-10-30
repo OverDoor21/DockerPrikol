@@ -6,18 +6,16 @@ using Spectre.Console;
 
 namespace Client.Console
 {
-    public class Menu
+    abstract public class Menu
     {
-        private bool IsRun;
-        public int? input { get; set;}
-        public Menu()
-        {
-            IsRun = true;
-        }
+        protected Commands commands = new();
+    }
 
+    public class MainMenu : Menu
+    {
         public void Start(){
             AnsiConsole.WriteLine("[orange]Welcome to the [green]client side application[/]![/]");
-            while(IsRun){
+            while(true){
                 var input = AnsiConsole.Prompt(
                     new SelectionPrompt<string>()
                         .Title("What do you want to do?")
@@ -28,7 +26,23 @@ namespace Client.Console
                             "Exit"
                         })
                 );
+                switch(input){
+                    case "Send a message":
+                        Commands.SendMessageToServer();
+                        break;
+                    case "Settings":
+                        Commands.Settings();
+                        break;
+                    case "Exit":
+                        Commands.Exit();
+                        break;
+                }
             }
-            }
+        }
+    }
+
+    public class SettingsMenu : Menu
+    {
+        
     }
 }

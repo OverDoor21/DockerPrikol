@@ -3,14 +3,9 @@
     class Program {
         public static void Main(string[] args)
         {
-            
-
-            
+            Console.WriteLine("Hello World of DevOps engineering");
+               
         }
-
-
-        public int[] TwoPricol(int[] nums, int target){
-           
-        }
+        
     }
 }

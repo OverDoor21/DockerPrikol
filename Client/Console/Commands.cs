@@ -6,37 +6,24 @@ using Spectre.Console;
 
 namespace Client.Console
 {
-    abstract public class Commands
-    {      
-        public abstract void Execute();
-    }
-
-    public class SendMessage : Commands
+    public class Commands
     {
-        public void SendMessageToServer()
+        public static void SendMessageToServer()
         {
-            var message = AnsiConsole.Ask<string>("Enter your message: ");
-            // send message to server
+                var message = AnsiConsole.Ask<string>("Enter your message: ");
+                // send message to server
         }
-        public override void Execute()
-        {
-            
-        }
-    }
 
-    public class Settings : Commands
-    {
-        public override void Execute()
+        public static void Settings()
         {
-            
+
+        }
+
+        public static void Exit()
+        {
+
         }
     }
 
-    public class Exit : Commands
-    {
-        public override void Execute()
-        {
-            
-        }
-    }
+
 }
